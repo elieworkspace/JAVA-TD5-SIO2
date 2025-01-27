@@ -26,3 +26,5 @@ jobs:
           distribution: 'temurin'
           java-version: ${{ matrix.java-version }}
           cache: 'maven'
+      - name: Run tests with Maven
+        run: mvn -B test --file pom.xml

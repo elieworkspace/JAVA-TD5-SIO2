@@ -11,15 +11,14 @@ class TaskTest {
 
     @BeforeEach
     void setUp() {
-       task = new Task("Learn Java");
+        task = new Task("Learn Java");
     }
 
     @Test
     void testTaskInitialization() {
         Task newTask = new Task("New task");
         assertEquals("New task", newTask.getTitle());
-        //assertFalse(newTask.isCompleted());
-        assertTrue(newTask.isCompleted());
+        assertFalse(newTask.isCompleted());
     }
 
     @Test
