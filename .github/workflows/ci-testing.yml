@@ -27,4 +27,4 @@ jobs:
           java-version: ${{ matrix.java-version }}
           cache: 'maven'
       - name: Run tests with Maven
-        run: mvn -B test --file pom.xml
+        run: mvn test
