@@ -5,7 +5,7 @@ name: JAVA TD 5 - Tests runners
 on:
   push:
     branches:
-      - test-xi
+      - main
 jobs:
   run-test:
     name : Run Tests suite
